@@ -1,0 +1,22 @@
+{
+    "Name": "PPC_Finger: human posterior parietal cortex recordings during attempted finger movements",
+    "BIDSVersion": "1.10",
+    "HEDVersion": "8.3.0",
+    "Description": "This dataset contains neural activity and trial information from a tetraplegic human participant performing a brain-computer interface (BCI) finger press task. Neural activity was recorded from a 96-channel Utah array (Blackrock) implanted in the left posterior parietal cortex (PPC) at the junction of the postcentral and intraparietal sulci (PC-IP). On each trial, a finger cue, at a pseudorandom location on a screen, was selected. The participant immediately looked at the cue and pressed the cued finger until decoder feedback was shown (1.5 seconds after the cue).\n\nThis dataset includes sorted unit spiking times, finger cue, in-session classified finger, cue location, and trial timing.",
+    "DatasetType": "raw",
+    "Authors": [
+        "Guan, Charles",
+        "Aflalo, Tyson",
+        "Zhang, Carey",
+        "Andersen, Richard"
+    ],
+    "License": "CC-BY-4.0",
+    "GeneratedBy": [
+        {
+            "Name": "nwb2bids",
+            "Version": "0.9.1.dev27+gf0fb7253c",
+            "Description": "Tool to reorganize NWB files into a BIDS directory layout.",
+            "CodeURL": "https://github.com/con/nwb2bids"
+        }
+    ]
+}
