@@ -1,2 +1,2 @@
-participant_id	species	sex
-sub-P1	Human	F
+participant_id	original_participant_id	species	sex
+sub-P1	sub-P1	Human	F
