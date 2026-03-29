@@ -1,0 +1,1480 @@
+{
+  "issues": {
+    "issues": [
+      {
+        "code": "UNKNOWN_BIDS_VERSION",
+        "location": "/dataset_description.json",
+        "rule": "rules.checks.dataset.UnknownVersion",
+        "severity": "ignore"
+      },
+      {
+        "code": "README_FILE_MISSING",
+        "location": "/dataset_description.json",
+        "rule": "rules.checks.hints.ReadmeFileMissing",
+        "severity": "ignore"
+      },
+      {
+        "code": "JSON_KEY_RECOMMENDED",
+        "subCode": "SourceDatasets",
+        "location": "/dataset_description.json",
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
+      },
+      {
+        "subCode": "session_id",
+        "location": "/sub-P1/sub-P1_sessions.tsv",
+        "rule": "rules.tabular_data.modality_agnostic.Sessions",
+        "code": "TSV_VALUE_INCORRECT_TYPE",
+        "line": 2,
+        "issueMessage": "'ses-2018-09-10'",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_probes.json",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_channels.json",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_events.json",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_events.tsv",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-10/ecephys/sub-P1_ses-2018-09-10_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-09-10 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_probes.json",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_channels.json",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_events.tsv",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-17/ecephys/sub-P1_ses-2018-10-17_events.json",
+        "issueMessage": "entity: ses label: 2018-10-17 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_events.json",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_channels.json",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_events.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17b/ecephys/sub-P1_ses-2018-09-17b_probes.json",
+        "issueMessage": "entity: ses label: 2018-09-17b pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_events.tsv",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_probes.json",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_channels.json",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-26/ecephys/sub-P1_ses-2018-09-26_events.json",
+        "issueMessage": "entity: ses label: 2018-09-26 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_events.json",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_probes.json",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_channels.json",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_events.tsv",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-10-22 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-10-22/ecephys/sub-P1_ses-2018-10-22_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_events.json",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_channels.json",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_probes.json",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_events.tsv",
+        "issueMessage": "entity: ses label: 2018-09-17a pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-09-17a/ecephys/sub-P1_ses-2018-09-17a_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_probes.json",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_events.json",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_events.tsv",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_channels.json",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-15 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-10-15/ecephys/sub-P1_ses-2018-10-15_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_channels.json",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_events.tsv",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_probes.json",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-01/ecephys/sub-P1_ses-2018-10-01_events.json",
+        "issueMessage": "entity: ses label: 2018-10-01 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_probes.json",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_events.tsv",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_events.json",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-09-24/ecephys/sub-P1_ses-2018-09-24_channels.json",
+        "issueMessage": "entity: ses label: 2018-09-24 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_electrodes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.nwb",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_ecephys.json",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_events.tsv",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "StimulusPresentation",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_events.tsv",
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_channels.json",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_electrodes.json",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_channels.tsv",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_events.json",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_probes.json",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      },
+      {
+        "code": "INVALID_ENTITY_LABEL",
+        "location": "/sub-P1/ses-2018-10-12/ecephys/sub-P1_ses-2018-10-12_probes.tsv",
+        "issueMessage": "entity: ses label: 2018-10-12 pattern: [0-9a-zA-Z+]+",
+        "severity": "error"
+      }
+    ],
+    "codeMessages": {
+      "UNKNOWN_BIDS_VERSION": "The BIDSVersion field of 'dataset_description.json' does not match a known release.\nThe BIDS Schema used for validation may be out of date.\n",
+      "README_FILE_MISSING": "The recommended file /README is missing.\nSee Section 03 (Modality agnostic files) of the BIDS specification.\n",
+      "JSON_KEY_RECOMMENDED": "A JSON file is missing a key listed as recommended.",
+      "TSV_VALUE_INCORRECT_TYPE": "A value in a column did not match the acceptable type for that column headers specified format.",
+      "INVALID_ENTITY_LABEL": "entity label doesn't match format found for files with this suffix",
+      "TSV_COLUMN_TYPE_REDEFINED": "A column required in a TSV file has been redefined in a sidecar file. This redefinition is being ignored.",
+      "SIDECAR_KEY_RECOMMENDED": "A data file's JSON sidecar is missing a key listed as recommended."
+    }
+  },
+  "summary": {
+    "sessions": [
+      "2018-09-10",
+      "2018-10-17",
+      "2018-09-17b",
+      "2018-09-26",
+      "2018-10-22",
+      "2018-09-17a",
+      "2018-10-15",
+      "2018-10-01",
+      "2018-09-24",
+      "2018-10-12"
+    ],
+    "subjects": [
+      "P1"
+    ],
+    "subjectMetadata": [
+      {
+        "participantId": "P1",
+        "sex": "F"
+      }
+    ],
+    "tasks": [],
+    "modalities": [
+      "microephys"
+    ],
+    "secondaryModalities": [],
+    "totalFiles": 105,
+    "size": 298813,
+    "dataProcessed": false,
+    "pet": {},
+    "dataTypes": [
+      "ecephys"
+    ],
+    "schemaVersion": "1.3.0-dev"
+  }
+}
